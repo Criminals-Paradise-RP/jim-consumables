@@ -3,10 +3,24 @@ local QBCore = exports[Config.Core]:GetCoreObject()
 local Consumables = Config.Consumables
 local Emotes = Config.Emotes
 
+-- for k, v in pairs(Config.Consumables) do
+-- 	QBCore.Functions.CreateUseableItem(k, function(source, item) TriggerClientEvent('jim-consumables:Consume', source, item.name) end)
+-- 	if not QBCore.Shared.Items[k] then print("^1Debug^7: ^2Item check ^7- '^1"..k.."^7' ^2not found in the shared lua^7") end
+-- 	if not Config.Emotes[v.emote] then print("^1Debug^7: ^2Emote check ^7- '^1"..k.."^7' ^2requested emote ^7'^6"..v.emote.."^7' - ^2not found in config^7.^2lua^7") end
+-- end
+
 for k, v in pairs(Config.Consumables) do
-	QBCore.Functions.CreateUseableItem(k, function(source, item) TriggerClientEvent('jim-consumables:Consume', source, item.name) end)
-	if not QBCore.Shared.Items[k] then print("^1Debug^7: ^2Item check ^7- '^1"..k.."^7' ^2not found in the shared lua^7") end
-	if not Config.Emotes[v.emote] then print("^1Debug^7: ^2Emote check ^7- '^1"..k.."^7' ^2requested emote ^7'^6"..v.emote.."^7' - ^2not found in config^7.^2lua^7") end
+    QBCore.Functions.CreateUseableItem(k, function(source, item) 
+        if not v.requiredItem then
+            TriggerClientEvent('jim-consumables:Consume', source, item.name) -- Trigger event to consume the item
+        elseif QBCore.Functions.HasItem(source, v.requiredItem) then -- Check if player has the required item in their inventory
+            TriggerClientEvent('jim-consumables:Consume', source, item.name) -- Trigger event to consume the item
+        else
+            TriggerClientEvent('QBCore:Notify', source, "You need a " .. v.requiredItem .. " to use this item.", "error") -- Send a notification to the player if they don't have the required item
+        end
+    end)
+    if not QBCore.Shared.Items[k] then print("Item check - '"..k.."' not found in the shared lua") end
+    if not Config.Emotes[v.emote] then print("Emote check - '"..k.."' requested emote '"..v.emote.."' - not found in config.lua") end
 end
 
 RegisterNetEvent("jim-consumables:server:DupeWarn", function(item, newsrc)
