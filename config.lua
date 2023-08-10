@@ -297,6 +297,58 @@ Config = {
 		["amaretto"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
 		["curaco"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
 		
+		-- ps-props
+			-- Soda Cans
+		["coke"]             = { emote = "coke",             canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["awrootbeer"]       = { emote = "awrootbeer",       canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["sprite"]           = { emote = "sprite",           canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["mountaindew"]      = { emote = "mountaindew",      canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["cherrycoke"]       = { emote = "cherrycoke",       canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["dietdew"]          = { emote = "dietdew",          canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["dppepper"]         = { emote = "dppepper",         canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["fantagrape"]       = { emote = "fantagrape",       canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["fantaorange"]      = { emote = "fantaorange",      canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+		["fantapineapple"]   = { emote = "fantapineapple",   canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(10, 20), }},
+			-- Energy Drinks
+		["redbull"] 			= { emote = "redbull", 			canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+		["redbullsugarfree"] 	= { emote = "redbullsugarfree", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+			-- Prime
+		["prime_blueraspberrry"]   = { emote = "prime_blueraspberrry",   canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+		["prime_grape"]            = { emote = "prime_grape",            canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+		["prime_icepop"]           = { emote = "prime_icepop",           canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+		["prime_lemonlime"]        = { emote = "prime_lemonlime",        canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+		["prime_metamoon"]         = { emote = "prime_metamoon",         canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+		["prime_orange"]           = { emote = "prime_orange",           canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+		["prime_tropicalpunch"]    = { emote = "prime_tropicalpunch", 	 canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 10, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(20, 30), }},
+			-- Starbucks
+		["starbuckscan_hazelnut"]         = { emote = "starbuckscan_hazelnut",         canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+		["starbuckscan_mocha"]            = { emote = "starbuckscan_mocha",            canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+		["starbuckscan_vanilla"]          = { emote = "starbuckscan_vanilla",          canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+		["starbuckscan_coffeeshot"]       = { emote = "starbuckscan_coffeeshot",       canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+		["starbuckscan_whitechocolate"]   = { emote = "starbuckscan_whitechocolate",   canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", thirst = math.random(10, 20), }},
+			-- Elfbar Vapes
+		["blueberry_elfbar"]     = { emote = "blueberry_elfbar",     canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["bubblegum_elfbar"]     = { emote = "bubblegum_elfbar",     canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["cheesecake_elfbar"]  	 = { emote = "cheesecake_elfbar",    canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["cherry_elfbar"]        = { emote = "cherry_elfbar",        canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["cola_elfbar"]          = { emote = "cola_elfbar",          canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["doubleapple_elfbar"]	 = { emote = "doubleapple_elfbar", 	 canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["elfbull_elfbar"]       = { emote = "elfbull_elfbar",       canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["grape_elfbar"]         = { emote = "grape_elfbar",         canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["greenapple_elfbar"]    = { emote = "greenapple_elfbar",    canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["mango_elfbar"]         = { emote = "mango_elfbar",         canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["strawberryice_elfbar"] = { emote = "strawberryice_elfbar", canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+		["watermelon_elfbar"]  	 = { emote = "watermelon_elfbar",    canRun = true, time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 5, type = "drug", stats = { screen = "turbo", widepupils = false, canOD = false } },
+			-- Truly's
+		["truly_blackcherry"] 	 = { emote = "truly_blackcherry", 	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_justmango"] 	 = { emote = "truly_justmango",	   	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_lemonade"] 	 	 = { emote = "truly_lemonade", 	   	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_mango"] 		 = { emote = "truly_mango", 	   	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_passionfruit"] 	 = { emote = "truly_passionfruit", 	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_pineapple"]		 = { emote = "truly_pineapple", 	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_pomegeanate"]	 = { emote = "truly_pomegeanate", 	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["truly_strawberry"] 	 = { emote = "truly_strawberry", 	canRun = true, time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+
 		------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		-- Items that effect status changes, like bleeding can cause problems as they are all handled in their own scripts
 		-- Testing these but they may be best left handled by default scripts
@@ -547,6 +599,60 @@ Config = {
 		["joint2"] = { "timetable@gardener@smoking_joint", "smoke_idle", "Joint 2", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},
 		["crack"] = { "switch@trevor@trev_smoking_meth", "trev_smoking_meth", "Crack", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},
 		["meth"] = { "switch@trevor@trev_smoking_meth", "trev_smoking_meth_loop", "Meth", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},
-		["edibles"] = { "mp_suicide", "pill", "Edibles", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},		
+		["edibles"] = { "mp_suicide", "pill", "Edibles", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},
+
+		-- ps-props
+			-- Soda Cans
+		["awrootbeer"] 		= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_awrootbeer", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["cherrycoke"] 		= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_cherrycoke", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["coke"] 			= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_coke", 		   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["dietdew"] 		= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_dietdew", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["dppepper"] 		= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_dppepper", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["fantagrape"] 		= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_fantagrape", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["fantaorange"] 	= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_fantaorange",    PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["fantapineapple"] 	= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_fantapineapple", PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["mountaindew"] 	= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_mountaindew",    PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["sprite"] 			= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_can_sprite", 		   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["7up"] 			= {"mp_player_intdrink", "loop_bottle", "Soda", AnimationOptions = { Prop = "brum_7up", 			   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+			-- Energy Drinks
+		["redbull"]                  = {"mp_player_intdrink", "loop_bottle", "Redbull", AnimationOptions = { Prop = "brum_can_redbull", 		 PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["redbullsugarfree"]         = {"mp_player_intdrink", "loop_bottle", "Redbull", AnimationOptions = { Prop = "brum_can_redbullsugarfree", PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+			-- Prime
+		["prime_blueraspberrry"]     = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_blueraspberrry", PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["prime_grape"]              = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_grape", 		   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["prime_icepop"]             = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_icepop", 		   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["prime_lemonlime"]          = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_lemonlime", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["prime_metamoon"]           = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_metamoon", 	   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["prime_orange"]             = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_orange", 		   PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["prime_tropicalpunch"]      = {"mp_player_intdrink", "loop_bottle", "Prime", AnimationOptions = { Prop = "brum_prime_tropicalpunch",  PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+			-- Starbucks
+		["starbuckscan_hazelnut"]    	= {"mp_player_intdrink", "loop_bottle", "Starbucks", AnimationOptions = { Prop = "brum_starbuckscan_coffeeshot", 	 PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["starbuckscan_mocha"]       	= {"mp_player_intdrink", "loop_bottle", "Starbucks", AnimationOptions = { Prop = "brum_starbuckscan_hazelnut", 	   	 PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["starbuckscan_vanilla"]     	= {"mp_player_intdrink", "loop_bottle", "Starbucks", AnimationOptions = { Prop = "brum_starbuckscan_mocha", 		 PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["starbuckscan_coffeeshot"]  	= {"mp_player_intdrink", "loop_bottle", "Starbucks", AnimationOptions = { Prop = "brum_starbuckscan_vanilla", 	   	 PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["starbuckscan_whitechocolate"] = {"mp_player_intdrink", "loop_bottle", "Starbucks", AnimationOptions = { Prop = "brum_starbuckscan_whitechocolate", PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+			-- Elfbar Vapes
+		["blueberry_elfbar"]       = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_blueberry_elfbar", 	 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["bubblegum_elfbar"]       = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_bubblegum_elfbar", 	 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["cheesecake_elfbar"]      = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_cheesecake_elfbar", 	 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["cherry_elfbar"]          = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_cherry_elfbar", 		 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["cola_elfbar"]            = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_cola_elfbar", 		 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["doubleapple_elfbar"]     = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_doubleapple_elfbar",   PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["elfbull_elfbar"]         = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_elfbull_elfbar", 		 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["grape_elfbar"]           = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_grape_elfbar", 		 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["greenapple_elfbar"]      = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_greenapple_elfbar", 	 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["mango_elfbar"]           = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_mango_elfbar", 		 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["strawberryice_elfbar"]   = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_strawberryice_elfbar", PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["watermelon_elfbar"]      = {"timetable@gardener@smoking_joint", "smoke_idle", "Vape", AnimationOptions = { Prop = "brum_watermelon_elfbar", 	 PropBone = 57005, PropPlacement = {0.12, -0.01, -0.03, 258.0, -171.0}, EmoteMoving = true, EmoteLoop = true, }},
+			-- Truly's
+		["truly_blackcherry"] 		= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_blackcherry", 	PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_justmango"] 		= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_justmango", 	PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_lemonade"] 			= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_lemonade", 	PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_mango"]				= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_mango", 		PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_passionfruit"] 		= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_passionfruit", PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_pineapple"] 		= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_pineapple", 	PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_pomegeanate"] 		= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_pomegeanate", 	PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+		["truly_strawberry"] 		= {"mp_player_intdrink", "loop_bottle", "Truly", AnimationOptions = { Prop = "brum_truly_strawberry", 	PropBone = 18905, PropPlacement = {0.12, 0.008, 0.03, 240.0, -60.0}, EmoteMoving = true, EmoteLoop = true, }},
+
 	},
 }
