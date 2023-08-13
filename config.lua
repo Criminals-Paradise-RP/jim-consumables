@@ -391,11 +391,11 @@ Config = {
 
 		--[[BOII-meth]]
 		["meth"] = { 			emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
-		["meth_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
+		-- ["meth_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
 
 		--[[BOII-heroin]]
 		["morphine"] = { 		emote = "heroin",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "syringe" },
-		["heroin_1oz"] = { 		emote = "heroin",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "syringe" },
+		-- ["heroin_1oz"] = { 		emote = "heroin",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "syringe" },
 		["heroinbaggy"] = { 	emote = "heroin",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "syringe" },
 		["liquidheroin"] = { 	emote = "heroin",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 10, type = "drug", stats = { screen = "rampage", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "syringe" },
 
@@ -421,7 +421,7 @@ Config = {
 		
 		--[[BOII-cocaine]]
 		["cokebaggy"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
-		["coke_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
+		-- ["coke_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
 		["crack_baggy"] = { 	emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "lighter" },
 		-- ["crack_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "lighter" },
 		
