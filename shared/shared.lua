@@ -255,6 +255,31 @@ function StaminaEffect(data)
     if Config.Debug then print("^5Debug^7: ^3StaminaEffect^7() ^2stopped") end
 end
 
+local battery = exports["lb-phone"]:GetBattery()
+function BatteryLoop()
+    if not looped then
+        looped = true
+        CreateThread(function()
+            while true do
+                Wait(10)
+                if battery <= 99 then
+                Wait(1000 * 10)
+                print("charging..")
+                battery +=1
+                print(battery)
+                exports["lb-phone"]:SetBattery(battery)
+                elseif battery >= 99 then
+                    print("Your battery is full")
+                    exports["lb-phone"]:ToggleCharging(false)
+                    QBCore.Functions.Notify("Your battery is full", "error")
+                    looped = false
+                    break
+                end
+            end
+        end)
+    end
+end
+
 function StopEffects() -- Used to clear up any effects stuck on screen
     if Config.Debug then print("^5Debug^7: ^2All screen effects stopped") end
     ShakeGameplayCam('DRUNK_SHAKE', 0.0)
