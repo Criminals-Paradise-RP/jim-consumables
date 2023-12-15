@@ -21,6 +21,18 @@ local function syncConsumables()
     propConvert()
 end
 
+RegisterNetEvent('jim-consumables:client:usepower', function() -- LB-PHONE
+    if not exports["lb-phone"]:IsCharging() or exports["lb-phone"]:IsPhoneDead() then
+        exports["lb-phone"]:ToggleCharging(true)
+        CreateThread(function() BatteryLoop() end)
+        QBCore.Functions.Notify("Charging..", "error")
+    elseif exports["lb-phone"]:IsCharging() then
+         QBCore.Functions.Notify("The phone is already charging", "error")
+    elseif exports["lb-phone"]:GetBattery() >= 90 then
+        QBCore.Functions.Notify("Your battery is full", "error")
+    end
+end)
+
 RegisterNetEvent("jim-consumables:client:syncConsumables", function(NewConsumables)
     if Config.Debug then for k, v in pairs(NewConsumables) do if not Consumables[k] then print("^5Debug^7: ^2New Item Info added^7: ^6"..k.."^7") end end end
     Consumables = NewConsumables
