@@ -95,6 +95,12 @@ end
 QBCore.Functions.CreateCallback('jim-consumables:server:syncConsumables', function(source, cb) cb(Consumables) end)
 QBCore.Functions.CreateCallback('jim-consumables:server:syncEmotes', function(source, cb) cb(Emotes) end)
 
+QBCore.Functions.CreateUseableItem("powerbank", function(source, item)
+    local Player = QBCore.Functions.GetPlayer(source)
+    -- if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
+    TriggerClientEvent("jim-consumables:client:usepower", source)
+end)
+
 RegisterNetEvent('jim-consumables:server:syncAddItem', function(itemName, data)
 	if not Consumables[itemName] then
 		QBCore.Functions.CreateUseableItem(itemName, function(source, item) TriggerClientEvent('jim-consumables:Consume', source, itemName) end)
