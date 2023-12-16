@@ -33,6 +33,31 @@ RegisterNetEvent('jim-consumables:client:usepower', function() -- LB-PHONE
     end
 end)
 
+function BatteryLoop()
+local battery = exports["lb-phone"]:GetBattery()
+    if not looped then
+        looped = true
+        CreateThread(function()
+            while true do
+                Wait(10)
+                if battery <= 99 then
+                Wait(1000 * 10)
+                print("charging..")
+                battery +=1
+                print(battery)
+                exports["lb-phone"]:SetBattery(battery)
+                elseif battery >= 99 then
+                    print("Your battery is full")
+                    exports["lb-phone"]:ToggleCharging(false)
+                    QBCore.Functions.Notify("Your battery is full", "error")
+                    looped = false
+                    break
+                end
+            end
+        end)
+    end
+end
+
 RegisterNetEvent("jim-consumables:client:syncConsumables", function(NewConsumables)
     if Config.Debug then for k, v in pairs(NewConsumables) do if not Consumables[k] then print("^5Debug^7: ^2New Item Info added^7: ^6"..k.."^7") end end end
     Consumables = NewConsumables
